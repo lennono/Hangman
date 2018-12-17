@@ -18,42 +18,7 @@ Hangman10::Hangman10(vector<string> help)
 Hangman10::Hangman10()
 {}
 
-/*vector<char> Hangman10::supersneaky(vector<char> word1, vector<char> usedletters)
-{
-	int count=0;
-	string word;
-	for(int d=0; d<word.size();d++)
-	{
-		for(int o=0; o<word1.size();o++)
-		{
-			word=job[d];
-			vector<char> word3(word.begin(), word.end());
-			if(word3[o]==word1[o])
-			{
-				count++;
-			}
-			else if(count==word1.size()-1)
-			{
-				if(d+1!=job.size())
-				{
-					word=job[d+1];
-					break;
-				}
-			}
-			if(count==word1.size())
-			{
-			vector<char> word3(word.begin(), word.end());
-			return word3;
-			}
-			else count=0;
-		}
-		
-	}
-	
-	//vector<char> word3(word.begin(), word.end());
-	return word1;
-}
-*/
+
 vector<char> Hangman10::sneaky(vector<char> wrongletters, char guess, vector<char> word1, int guesses, vector<char> usedletters)
 {
 	string word;
